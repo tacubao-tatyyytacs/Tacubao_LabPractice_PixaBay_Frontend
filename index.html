@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Pixabay API Frontend </title>
+        <link rel = "stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Pixabay Viewer smh</h1>
+        <input id="search" type="text" placeholder="Type here...">
+
+    <select id="filter">
+        <option value="photos">Photo</option>
+        <option value="videos">Video</option>
+    </select>
+
+    <button onclick="search()">Search</button>
+
+    <div class="suggestions">
+        <button onclick="challenge('rocket launch')">Rocket Launch</button>
+        <button onclick="challenge('basketball')">Basketball</button>
+        <button onclick="challenge('forest')">Forest</button>
+        <button onclick="challenge('road forest')">Road Forest</button>
+    </div>
+
+    <div id="loading">Loading...</div>
+    <div id="results"></div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+
+    </body>
+</html>
